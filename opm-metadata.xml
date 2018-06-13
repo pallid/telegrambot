@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
     <name>telegrambot</name>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <depends-on name="json" />
     <depends-on name="logos" />
 </opm-metadata>
