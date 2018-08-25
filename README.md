@@ -1,7 +1,23 @@
 # telegrambot
-Библиотека для взаимодействия с Telegram Bot API
+Библиотека для взаимодействия с [Telegram Bot API](https://core.telegram.org/bots/api)
 
-Пример
+### Установка telegrambot
+----
+Первый способ - установить через opm:
+
+```
+$ opm install telegrambot
+```
+
+Второй способ - скачать нужный релиз (https://github.com/pallid/telegrambot/releasess) и установить вручную:
+
+```
+$ opm install -f "path/to/file.ospx"
+```
+
+где path/to/file.ospx - путь к файлу реализа пакета для onescript.
+
+### Пример
 ```
 
 Бот = Новый ТелеграмБот;
