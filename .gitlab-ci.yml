@@ -1,0 +1,33 @@
+image: evilbeaver/onescript
+
+stages:
+  - build
+  - deploy
+ 
+build:
+  stage: build
+  script:
+  - grep '%ver' -P -R -I -l packagedef | xargs sed -i 's/%ver/'$CI_COMMIT_REF_NAME'/g'
+  - mkdir ./build
+  - opm build . -mf packagedef -out ./build
+  artifacts:
+    name: "$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+    - $CI_PROJECT_NAME-$CI_COMMIT_REF_NAME.ospx
+  only:
+    - tags  
+
+deploy to hub.oscript:
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  script:
+  - cd ./build
+  - opm push --token $GITHUB_TOKEN --file $CI_PROJECT_NAME-$CI_COMMIT_REF_NAME --channel stable
+  artifacts:
+    when: on_failure
+    paths:
+    - .
+    expire_in: 1 day
+  only:
+    - tags  
