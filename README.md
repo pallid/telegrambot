@@ -19,6 +19,10 @@ $ opm install -f "path/to/file.ospx"
 
 ### Пример
 
+[Пример](https://github.com/pallid/example-telegrambot) реализации telegram bot на oscript-web
+
+[Демо бот](https://t.me/oswebbot?start)
+
 Библиотека к вашему проекту подключается с помощью директивы #Использовать telegrambot. После этого в области видимости скрипта будет доступен класс ТелеграмБот и модуль ТелеграмАПИ:
 
 ```
