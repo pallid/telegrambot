@@ -9,7 +9,7 @@
 $ opm install telegrambot
 ```
 
-Второй способ - скачать нужный релиз (https://github.com/pallid/telegrambot/releasess) и установить вручную:
+Второй способ - скачать нужный релиз (https://github.com/pallid/telegrambot/releases) и установить вручную:
 
 ```
 $ opm install -f "path/to/file.ospx"
