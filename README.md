@@ -1,6 +1,10 @@
 # telegrambot
 Библиотека для взаимодействия с [Telegram Bot API](https://core.telegram.org/bots/api)
 
+:warning: **Проект перенесен в архив.**<br>
+> Дальнейшее развитие будет происходить в репозитории https://github.com/k2589/telegrambot
+<br> :handshake: Благоарность @k2589 за то что согласился дальше развивать это решение.
+
 ### Установка telegrambot
 ----
 Первый способ - установить через opm:
